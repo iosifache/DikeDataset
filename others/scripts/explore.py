@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Python 3 script for analyzing the dataset labels and for creating
-tables and images
+tables and images.
 
 Before running the script, install the Python 3 dependencies by
 executing the command `pip3 install requirements.txt`.
@@ -44,11 +44,11 @@ plt.savefig(DISTRIBUTION_IMAGE)
 # Generate the characteristics table
 column_types = [(column_type[0], str(column_type[1]))
                 for column_type in malware_df.dtypes.items()]
-labels_table = tabulate(column_types, ["Name", "Type"],
-                                 tablefmt="github")
+labels_table = tabulate(column_types, ["Name", "Type"], tablefmt="github")
 with open(LABELS_TABLE, "w") as labels_file:
     labels_file.write(labels_table)
-print("[+] The table containing the characteristics of the dataset was dumped.")
+print(
+    "[+] The table containing the characteristics of the dataset was dumped.")
 
 # Generate the univariate analysis table
 analysis_malware_df = malware_df.loc[:, malware_df.columns != "type"]
