@@ -2,16 +2,17 @@
 
 ## Table of Content 🔖
 
-- [Table of Content 🔖](#table-of-content-)
-- [Description 🖌️](#description-️)
-- [Labels Exploration 🔍](#labels-exploration-)
-- [Methodology 👷](#methodology-)
-  - [Downloading Step](#downloading-step)
-  - [Renaming Step](#renaming-step)
-  - [Scanning Step](#scanning-step)
-  - [Labeling Step](#labeling-step)
-- [Sources ©️](#sources-️)
-- [Folders Structure 📂](#folders-structure-)
+- [DikeDataset 🗃️](#dikedataset-️)
+  - [Table of Content 🔖](#table-of-content-)
+  - [Description 🖌️](#description-️)
+  - [Labels Exploration 🔍](#labels-exploration-)
+  - [Methodology 👷](#methodology-)
+    - [Downloading Step](#downloading-step)
+    - [Renaming Step](#renaming-step)
+    - [Scanning Step](#scanning-step)
+    - [Labeling Step](#labeling-step)
+  - [Sources ©️](#sources-️)
+  - [Folders Structure 📂](#folders-structure-)
 
 ## Description 🖌️
 
@@ -104,6 +105,7 @@ malice = malign_weight / (malign_weight + benign_weight)
 
 1. [Malware Detection PE-Based Analysis Using Deep Learning Algorithm Dataset](https://figshare.com/articles/dataset/Malware_Detection_PE-Based_Analysis_Using_Deep_Learning_Algorithm_Dataset/6635642), containing malicious and benign PE files and having CC BY 4.0 license
 2. [MalwareBazaar](https://bazaar.abuse.ch), containing (among others) malicious OLE files and having CC0 license
+3. [DuckDuckGo](https://duckduckgo.com/), that was used for searching benign documents with patterns such as `filetype:doc`
 
 ## Folders Structure 📂
 
