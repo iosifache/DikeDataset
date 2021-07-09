@@ -68,7 +68,7 @@ It is worth mentioning that the numeric labels, with values between `0` and `1`,
 
 ## Methodology 👷
 
-> **Observation**: A Bash [script](others/scripts/get_files.sh) can be used to replicate the downloading and the renaming steps. On the other hand, the last two steps consist of using functionalities that are available only in the `dike`. When the platform will be released, the functionalities will be referenced here.
+> **Observation**: A Bash [script](others/scripts/get_files.sh) can be used to replicate the downloading and the renaming steps. On the other hand, the last two steps consist of using functionalities that are available only in the `dike`, namely in [this](https://github.com/iosifache/dike/blob/main/codebase/scripts/continuous_vt_scan.py) Python script.
 
 ### Downloading Step
 
