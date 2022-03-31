@@ -16,11 +16,15 @@
 
 ## Description 🖌️
 
-**DikeDataset** is a **labeled dataset** containing **benign and malicious PE and OLE files**. It was mainly built to be used in `dike`, an upcoming platform that uses artificial intelligence techniques in the process of malware analysis.
+**DikeDataset** is a **labeled dataset** containing **benign and malicious PE and OLE files**.
 
-Considering the number, the types, and the meanings of the labels, **DikeDataset** can be used for training artificial intelligence algorithms to predict, for a PE or OLE file, the **malice** and the **membership to a malware family**. The artificial intelligence approaches can vary from machine learning (with algorithms such as regressors and soft multi-label classifiers) to deep learning, depending on the requirements.
+Considering the number, the types, and the meanings of the labels, DikeDataset can be used for training artificial intelligence algorithms to predict, for a PE or OLE file, the **malice** and the **membership to a malware family**. The artificial intelligence approaches can vary from machine learning (with algorithms such as regressors and soft multi-label classifiers) to deep learning, depending on the requirements.
 
 It is worth mentioning that the numeric labels, with values between `0` and `1`, can be transformed into discrete ones to respect the constraints of standard classification. For example, if a superior malice limit for benign files is set to `0.4`, a file having the malice of `0.593` is considered malicious.
+
+DikeDataset was proudly used in:
+- [`dike`](https://github.com/iosifache/dike), a platform that uses artificial intelligence techniques in the process of malware analysis; and
+- ["*Toward Identifying APT Malware through API System Calls*"](https://www.hindawi.com/journals/scn/2021/8077220/), an article about the usage of transfer learning for classifying malware in advanced persistent threat families.
 
 ## Labels Exploration 🔍
 
@@ -33,7 +37,7 @@ It is worth mentioning that the numeric labels, with values between `0` and `1`,
     <summary>Labels Identification</summary>
 
 | Name       | Type    |
-|------------|---------|
+| ---------- | ------- |
 | type       | int64   |
 | hash       | object  |
 | malice     | float64 |
@@ -52,12 +56,12 @@ It is worth mentioning that the numeric labels, with values between `0` and `1`,
 <details>
     <summary>Mean, Standard Deviation, Minimum and Maximum</summary>
 
-|      |    malice |   generic |    trojan |   ransomware |      worm |   backdoor |    spyware |    rootkit |   encrypter |   downloader |
-|------|-----------|-----------|-----------|--------------|-----------|------------|------------|------------|-------------|--------------|
-| mean | 0.876484  | 0.412354  | 0.44581   |   0.00503229 | 0.0086457 |  0.0117696 | 0.00030322 | 0.00614807 |   0.0719921 |    0.037945  |
-| std  | 0.0779914 | 0.0779332 | 0.0891624 |   0.0192288  | 0.0189522 |  0.0333144 | 0.00227205 | 0.0263416  |   0.0622346 |    0.0699552 |
-| min  | 0.235294  | 0.140351  | 0.05      |   0          | 0         |  0         | 0          | 0          |   0         |    0         |
-| max  | 0.981132  | 0.916667  | 0.76087   |   0.307692   | 0.59      |  0.290323  | 0.0212766  | 0.307692   |   0.3125    |    0.307692  |
+|      | malice    | generic   | trojan    | ransomware | worm      | backdoor  | spyware    | rootkit    | encrypter | downloader |
+| ---- | --------- | --------- | --------- | ---------- | --------- | --------- | ---------- | ---------- | --------- | ---------- |
+| mean | 0.876484  | 0.412354  | 0.44581   | 0.00503229 | 0.0086457 | 0.0117696 | 0.00030322 | 0.00614807 | 0.0719921 | 0.037945   |
+| std  | 0.0779914 | 0.0779332 | 0.0891624 | 0.0192288  | 0.0189522 | 0.0333144 | 0.00227205 | 0.0263416  | 0.0622346 | 0.0699552  |
+| min  | 0.235294  | 0.140351  | 0.05      | 0          | 0         | 0         | 0          | 0          | 0         | 0          |
+| max  | 0.981132  | 0.916667  | 0.76087   | 0.307692   | 0.59      | 0.290323  | 0.0212766  | 0.307692   | 0.3125    | 0.307692   |
 
 </details>
 
