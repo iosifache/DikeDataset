@@ -23,8 +23,21 @@ Considering the number, the types, and the meanings of the labels, DikeDataset c
 It is worth mentioning that the numeric labels, with values between `0` and `1`, can be transformed into discrete ones to respect the constraints of standard classification. For example, if a superior malice limit for benign files is set to `0.4`, a file having the malice of `0.593` is considered malicious.
 
 DikeDataset was proudly used in:
-- [`dike`](https://github.com/iosifache/dike), a platform that uses artificial intelligence techniques in the process of malware analysis; and
-- ["*Toward Identifying APT Malware through API System Calls*"](https://www.hindawi.com/journals/scn/2021/8077220/), an article about the usage of transfer learning for classifying malware in advanced persistent threat families.
+
+- **Academic studies** with BibTeX references in [`others/citations.bib`](others/citations.bib)
+    - "*Adversarial Robustness of Learning-based Static Malware Classifiers*"
+    - "*AutoEncoder 기반 역난독화 사전학습 및 전이학습을 통한 악성코드 탐지 방법론*"
+    - "*Extended Abstract: Effective Call Graph Fingerprinting for the Analysis and Classification of Windows Malware*"
+    - "*Intelligent Endpoint-based Ransomware Detection Framework*"
+    - "*Malware Detection by Control-Flow Graph Level Representation Learning With Graph Isomorphism Network*"
+    - "*Malware Detection in URL Using Machine Learning Approach*"
+    - "*SoK: Use of Cryptography in Malware Obfuscation*"
+    - "*Toward identifying APT malware through API system calls*"
+- **Projects**
+    - [`dike`](https://github.com/iosifache/dike), a platform that uses artificial intelligence techniques in the process of malware analysis
+    - [Various open source projects](https://github.com/search?q=dikedataset&type=code).
+ 
+> **Notice**: If you're using DikeDataset in an academic study or project, please open an issue or submit a PR if you want to be cited in the above list and the citations file.
 
 ## Labels Exploration 🔍
 
