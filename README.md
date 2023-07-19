@@ -13,6 +13,7 @@
     - [Labeling Step](#labeling-step)
   - [Sources ©️](#sources-️)
   - [Folders Structure 📂](#folders-structure-)
+  - [Citations 📄](#citations-)
 
 ## Description 🖌️
 
@@ -21,23 +22,6 @@
 Considering the number, the types, and the meanings of the labels, DikeDataset can be used for training artificial intelligence algorithms to predict, for a PE or OLE file, the **malice** and the **membership to a malware family**. The artificial intelligence approaches can vary from machine learning (with algorithms such as regressors and soft multi-label classifiers) to deep learning, depending on the requirements.
 
 It is worth mentioning that the numeric labels, with values between `0` and `1`, can be transformed into discrete ones to respect the constraints of standard classification. For example, if a superior malice limit for benign files is set to `0.4`, a file having the malice of `0.593` is considered malicious.
-
-DikeDataset was proudly used in:
-
-- **Academic studies** with BibTeX references in [`others/citations.bib`](others/citations.bib)
-    - "*Adversarial Robustness of Learning-based Static Malware Classifiers*"
-    - "*AutoEncoder 기반 역난독화 사전학습 및 전이학습을 통한 악성코드 탐지 방법론*"
-    - "*Extended Abstract: Effective Call Graph Fingerprinting for the Analysis and Classification of Windows Malware*"
-    - "*Intelligent Endpoint-based Ransomware Detection Framework*"
-    - "*Malware Detection by Control-Flow Graph Level Representation Learning With Graph Isomorphism Network*"
-    - "*Malware Detection in URL Using Machine Learning Approach*"
-    - "*SoK: Use of Cryptography in Malware Obfuscation*"
-    - "*Toward identifying APT malware through API system calls*"
-- **Projects**
-    - [`dike`](https://github.com/iosifache/dike), a platform that uses artificial intelligence techniques in the process of malware analysis
-    - [Various open source projects](https://github.com/search?q=dikedataset&type=code).
- 
-> **Notice**: If you're using DikeDataset in an academic study or project, please open an issue or submit a PR if you want to be cited in the above list and the citations file.
 
 ## Labels Exploration 🔍
 
@@ -152,3 +136,33 @@ DikeDataset                                 root folder
 │   └── vt_data.csv                         raw VirusTotal scan results
 └── README.md                               this file
 ```
+
+## Citations 📄
+
+DikeDataset was proudly used in:
+
+- **Academic studies** with BibTeX references in [`others/citations.bib`](others/citations.bib)
+    - "*A Corpus of Encoded Malware Byte Information as Images for Efficient Classification*"
+    - "*Adversarial Robustness of Learning-based Static Malware Classifiers*"
+    - "*An ensemble deep learning classifier stacked with fuzzy ARTMAP for malware detection*"
+    - "*AutoEncoder 기반 역난독화 사전학습 및 전이학습을 통한 악성코드 탐지 방법론*"
+    - "*Comparison of Feature Extraction and Classification Techniques of PE Malware*"
+    - "*Deep Learning based Residual Attention Network for Malware Detection in CyberSecurity*"
+    - "*Detecting Malware Activities with MalpMiner: A Dynamic Analysis Approach*"
+    - "*Effective Call Graph Fingerprinting for the Analysis and Classification of Windows Malware*"
+    - "*Evaluation and survey of state of the art malware detection and classification techniques: Analysis and recommendation*"
+    - "*Intelligent Endpoint-based Ransomware Detection Framework*"
+    - "*Knowledge Graph creation on Windows malwares and completion using knowledge graph embedding*"
+    - "*Machine Learning for malware characterization and identification*"
+    - "*Malware Detection by Control-Flow Graph Level Representation Learning With Graph Isomorphism Network*"
+    - "*Malware Detection in URL Using Machine Learning Approach*"
+    - "*SoK: Use of Cryptography in Malware Obfuscation*"
+    - "*Técnicas de aprendizaje máquina para análisis de malware*"
+    - "*Toward a methodology for malware analysis and characterization for Machine Learning application*"
+    - "*Toward identifying APT malware through API system calls*"
+    - "*Uso de algoritmos de machine learning para la detección de archivos malware*"
+- **Projects**
+    - [`dike`](https://github.com/iosifache/dike), a platform that uses artificial intelligence techniques in the process of malware analysis
+    - [Various open source projects](https://github.com/search?q=dikedataset&type=code).
+ 
+> **Notice**: If you're using DikeDataset in an academic study or project, please open an issue or submit a PR if you want to be cited in the above list and the citations file.
